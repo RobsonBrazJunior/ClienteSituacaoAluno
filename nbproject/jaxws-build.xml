@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+        *** GENERATED FROM jax-ws.xml - DO NOT EDIT !                             ***
+        *** TO MODIFY wsimport options USE Web Service node -> Edit WS Attributes ***
+        *** TO CHANGE TARGETS GENERATED TO jaxws-build.xml COPY THOSE             ***
+        *** TARGETS TO ../build.xml AND MODIFY THAT FILE INSTEAD                  ***
+
+        --><project xmlns:xalan="http://xml.apache.org/xslt" xmlns:j2seproject3="http://www.netbeans.org/ns/j2se-project/3" xmlns:jaxws="http://www.netbeans.org/ns/jax-ws/1">
+    <!--
+                ===================
+                JAX-WS WSIMPORT SECTION
+                ===================
+            -->
+    <target name="wsimport-init" depends="init">
+        <mkdir dir="${build.generated.sources.dir}/jax-ws"/>
+        <taskdef name="wsimport" classname="com.sun.tools.ws.ant.WsImport">
+            <classpath path="${libs.jaxws21.classpath}"/>
+        </taskdef>
+    </target>
+    <target name="wsimport-client-ServicoSituacaoAluno" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/ServicoSituacaoAluno"/>
+        <property name="wsdl-ServicoSituacaoAluno" location="xml-resources/web-service-references/ServicoSituacaoAluno/wsdl/localhost_8080/WSSituacaoAluno/ServicoSituacaoAluno.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/ServicoSituacaoAluno" destdir="${build.generated.dir}/jax-wsCache/ServicoSituacaoAluno" wsdl="${wsdl-ServicoSituacaoAluno}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/WSSituacaoAluno/ServicoSituacaoAluno?wsdl" xnocompile="true" xendorsed="true" package="clientews">
+            <depends file="${wsdl-ServicoSituacaoAluno}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/ServicoSituacaoAluno"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/ServicoSituacaoAluno">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-ServicoSituacaoAluno" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/ServicoSituacaoAluno"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/clientews"/>
+    </target>
+    <target name="wsimport-client-SituacaoPonderadaAluno1" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/SituacaoPonderadaAluno1"/>
+        <property name="wsdl-SituacaoPonderadaAluno1" location="xml-resources/web-service-references/SituacaoPonderadaAluno1/wsdl/localhost_8080/WSSituacaoAluno/SituacaoPonderadaAluno1.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/SituacaoPonderadaAluno1" destdir="${build.generated.dir}/jax-wsCache/SituacaoPonderadaAluno1" wsdl="${wsdl-SituacaoPonderadaAluno1}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/WSSituacaoAluno/SituacaoPonderadaAluno1?wsdl" xnocompile="true" xendorsed="true" package="clientews2">
+            <depends file="${wsdl-SituacaoPonderadaAluno1}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/SituacaoPonderadaAluno1"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/SituacaoPonderadaAluno1">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-SituacaoPonderadaAluno1" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/SituacaoPonderadaAluno1"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/clientews2"/>
+    </target>
+    <target name="wsimport-client-SituacaoPonderadaAluno2" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/SituacaoPonderadaAluno2"/>
+        <property name="wsdl-SituacaoPonderadaAluno2" location="xml-resources/web-service-references/SituacaoPonderadaAluno2/wsdl/localhost_8080/WSSituacaoAluno/SituacaoPonderadaAluno2.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/SituacaoPonderadaAluno2" destdir="${build.generated.dir}/jax-wsCache/SituacaoPonderadaAluno2" wsdl="${wsdl-SituacaoPonderadaAluno2}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/WSSituacaoAluno/SituacaoPonderadaAluno2?wsdl" xnocompile="true" xendorsed="true" package="clientews3">
+            <depends file="${wsdl-SituacaoPonderadaAluno2}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/SituacaoPonderadaAluno2"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/SituacaoPonderadaAluno2">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-SituacaoPonderadaAluno2" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/SituacaoPonderadaAluno2"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/clientews3"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-ServicoSituacaoAluno, wsimport-client-SituacaoPonderadaAluno1, wsimport-client-SituacaoPonderadaAluno2"/>
+</project>
